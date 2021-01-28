@@ -1,0 +1,55 @@
+<%- include("includes/navbar"); %>
+<main>
+  <!-- <section style="visibility: hidden;"></section> -->
+  <!-- <section class="banner">
+        <img src="assets/img/chatUI.jpeg" alt="" />
+      </section> -->
+
+  <section class="">
+    <div class="card-inline container container-market">
+      <a href="/market/data" class="card card-sm btn-capsule">
+        <div class="card-image"></div>
+        <div class="card-info">
+          <h1><%- market.data.strings.name %></h1>
+          <p><%- market.data.strings.label %></p>
+        </div>
+      </a>
+      <a href="/market/recharge" class="card card-sm btn-capsule">
+        <div class="card-image"></div>
+        <div class="card-info">
+          <h1><%- market.recharge.strings.name %></h1>
+          <p><%- market.recharge.strings.label %></p>
+        </div>
+      </a>
+      <a href="/market/airtime" class="card card-sm btn-capsule">
+        <div class="card-image"></div>
+        <div class="card-info">
+          <h1><%- market.airtime.strings.name %></h1>
+          <p><%- market.airtime.strings.label %></p>
+        </div>
+      </a>
+      <a href="/market/tv" class="card card-sm btn-capsule">
+        <div class="card-image"></div>
+        <div class="card-info">
+          <h1><%- market.tv.strings.name %></h1>
+          <p><%- market.tv.strings.label %></p>
+        </div>
+      </a>
+      <a href="/market/electricity" class="card card-sm btn-capsule">
+        <div class="card-image"></div>
+        <div class="card-info">
+          <h1><%- market.electricity.strings.name %></h1>
+          <p><%- market.electricity.strings.label %></p>
+        </div>
+      </a>
+      <a href="/market/services" class="card card-sm btn-capsule">
+        <div class="card-image"></div>
+        <div class="card-info">
+          <h1><%- market.services.strings.name %></h1>
+          <p><%- market.services.strings.label %></p>
+        </div>
+      </a>
+    </div>
+  </section>
+</main>
+<%- include("includes/footer"); %>

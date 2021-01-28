@@ -1,0 +1,112 @@
+<%- include("../includes/navbar"); %>
+
+<main class="x101">
+  <%- include("../includes/sidebar", {data:"airtime"}) %>
+  <!-- <section class="hide"></section> -->
+  <!-- <section class="banner">
+        <img src="assets/img/chatUI.jpeg" alt="" />
+      </section> -->
+
+  <section class="x110 container-fit-content">
+    <div class="form-group">
+      <label for="host">Select Host</label>
+      <div class="btn-group">
+        <button class="btn btn-primary btn-capsule">Mtn</button>
+        <button class="btn btn-primary btn-capsule">Glo</button>
+        <button class="btn btn-primary btn-capsule">9mobile</button>
+        <button class="btn btn-primary btn-capsule">Airtel</button>
+        <button class="btn btn-primary btn-capsule">Vodafone</button>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="volume">Select Volume</label>
+      <div class="btn-group btn-r-5">
+        <button class="btn btn-primary btn-capsule">100</button>
+        <button class="btn btn-primary btn-capsule">200</button>
+        <button class="btn btn-primary btn-capsule">300</button>
+        <button class="btn btn-primary btn-capsule">400</button>
+        <button class="btn btn-primary btn-capsule">500</button>
+        <button class="btn btn-primary btn-capsule">600</button>
+        <button class="btn btn-primary btn-capsule">700</button>
+        <button class="btn btn-primary btn-capsule">800</button>
+        <button class="btn btn-primary btn-capsule">900</button>
+        <button class="btn btn-primary btn-capsule">1000</button>
+        <button class="btn btn-primary btn-capsule">Enter Amount</button>
+      </div>
+    </div>
+    <div class="form-group">
+      <!-- <label for="host">Enter Number</label> -->
+      <div class="btn-group">
+        <input type="number" class="btn btn-capsule" placeholder="25,000" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="host">Select Quantity</label>
+      <div class="btn-group">
+        <select name="quantity" id="" class="btn-capsule">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="host">Receive by:</label>
+      <div class="btn-group">
+        <label for="receiveByEmail" class="btn-capsule">
+          <input
+            type="radio"
+            name="receiveBy"
+            value="email"
+            id="receiveByEmail"
+            checked
+          />Email
+        </label>
+
+        <label for="receiveByDirect" class="btn-capsule"
+          ><input
+            type="radio"
+            name="receiveBy"
+            value="direct"
+            id="receiveByDirect"
+          />Direct</label
+        >
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="host">Enter Number</label>
+      <div class="btn-group">
+        <input type="text" class="btn btn-capsule" placeholder="0814XXXXXX" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="host">Summary</label>
+      <div class="">
+        <h4>
+          You will receive<i class="btn">10 copies</i> of<i class="btn">1000</i>
+          recharge cards on your email<i class="btn"> (email@mail.com)</i>.
+        </h4>
+        <h4>Amount: <i class="btn">1,500 NGN</i></h4>
+        <h4>
+          Discount:
+          <i class="btn">20% <small style="color: red">(-58 NGN)</small></i>
+        </h4>
+        <h4>Payable: <i class="btn">1,250 NGN</i></h4>
+      </div>
+    </div>
+    <div class="flex-x">
+      <button class="btn bx121 p-1 btn-primary btn-capsule">Continue</button>
+    </div>
+  </section>
+
+  <%- include("../includes/marketMenuDescription") %>
+</main>
+
+<%- include("../includes/footer"); %>

@@ -1,0 +1,14 @@
+<section class="x120 container-fit-content">
+    <div class="xyz">
+        <div class="n404 p-2">
+            <h1 id="n100"><%- pageid.toLocaleUpperCase() %></h1>
+            <p><%- description %></p>
+        </div>
+    </div>
+  </section>
+
+  
+<script>
+    const pageid = location.pathname.split("/").pop().trim();
+    document.getElementsByClassName(pageid).item(0).classList.add("active")
+</script>

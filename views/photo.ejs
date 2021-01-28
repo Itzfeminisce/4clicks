@@ -1,0 +1,178 @@
+<%- include("includes/navbar"); %>
+
+<main class="main-home" style="padding: 0; margin: 0">
+    <section
+        class="mx00"
+        style="
+            background-color: transparent;
+            box-shadow: none;
+            padding: 0;
+            margin: 0;
+        "
+    >
+    <div class="ax01">
+        <!-- left column -->
+        <div class="ax011">
+            <img
+                            src="assets\img\121055303_2700629410189677_771679212179970439_o.jpg"
+                            alt=""
+                        />
+        </div>
+
+        <!-- right column -->
+        <div class="ax012">
+            <!-- Post card -->
+            <div class="card card-card">
+                <div class="card-header">
+                    <div class="card-header-image">
+                        <img
+                            src="assets\img\chatUI.jpeg"
+                            height="100%"
+                            width="100%"
+                            alt=""
+                        />
+                    </div>
+                    <div class="card-header-info">
+                        <h4>
+                            Rotimi Femi
+                            <span>is with 24 of his friends </span>
+                        </h4>
+                        <p>yesterday 23:25</p>
+                    </div>
+                    <button id="" class="c001 c112 p-1 dropDownMenuToggler">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </button>
+
+                    <div id="" class="dropDownMenu">
+                        <button id="" class="removeDropDownMenu">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><i class="fa fa-user"></i>Link</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i class="fa fa-user"></i>Link</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i class="fa fa-user"></i>Link</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="p111">
+                        <p>
+                            Hello world Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Sapiente obcaecati
+                            tempore veritatis reiciendis, itaque ullam
+                            debitis iusto delectus minus error
+                            exercitationem. Nesciunt, dolorem doloribus
+                            officia id est quisquam harum officiis.
+                        </p>
+                    </div>
+                    <div class="p112">
+                        <!-- <a
+                            href="/photo"
+                            title="User"
+                        >
+                            <img
+                                src="assets\img\chatUI.jpeg"
+                                height="100%"
+                                width="100%"
+                                alt=""
+                            />
+                        </a> -->
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button>
+                        <i class="fa fa-thumbs-up"></i>&nbsp; Like
+                    </button>
+                    <button>
+                        <i class="fa fa-comment"></i>&nbsp; Comment
+                    </button>
+                    <button>
+                        <i class="fa fa-share"></i> &nbsp; Share
+                    </button>
+                </div>
+                <div class="card-footer card-footer-extended">
+                    <div class="card-header-info">
+                        <p>View 34 more Comments</p>
+                    </div>
+                    <div class="c101">
+                        <div class="card-header-info c111">
+                            <div class="card-header-image c112"></div>
+                            <p class="c112-1 p-l-1">Some comment</p>
+                            <button class="c001 c112">
+                                <i class="fa fa-thumbs-up"></i>
+                            </button>
+                            <button class="c001 c112">
+                                <i class="fa fa-share"></i>
+                            </button>
+                            <button class="c001 c112" disabled>
+                                <i class="fa fa-">2d</i>
+                            </button>
+                        </div>
+                        <div class="card-header-info c111 reply" style="max-width: 90%;margin: auto 0 auto auto;">
+                            <div class="card-header-image c112"></div>
+                            <p class="c112-1 p-l-1">Some replies</p>
+                        </div>
+                    </div>
+                    <div class="c101">
+                        <div class="card-header-info c111">
+                            <div class="card-header-image c112"></div>
+                            <p class="c112-1 p-l-1">Some comment</p>
+                            <button class="c001 c112">
+                                <i class="fa fa-thumbs-up"></i>
+                            </button>
+                            <button class="c001 c112">
+                                <i class="fa fa-share"></i>
+                            </button>
+                            <button class="c001 c112" disabled>
+                                <i class="fa fa-">2d</i>
+                            </button>
+                        </div>
+                        <div class="card-header-info c111 reply" style="max-width: 90%;margin: auto 0 auto auto;">
+                            <div class="card-header-image c112"></div>
+                            <p class="c112-1 p-l-1">Some replies</p>
+                        </div>
+                    </div>
+                    <div class="card-header-info c111">
+                        <div class="card-header-image c112"></div>
+                        <input
+                            type="text"
+                            class="c112-1 c112-1x"
+                            placeholder="Write a comment"
+                        />
+                        <button class="c001 c112">
+                            <i class="fa fa-user"></i>
+                        </button>
+                        <button class="c001 c112">
+                            <i class="fa fa-camera"></i>
+                        </button>
+                        <button class="c001 c112">
+                            <i class="fa fa-share"></i>
+                        </button>
+                        <button class="c001 c112">
+                            <i class="fa fa-share-send">
+                            Send
+                            </i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <%- include("includes/modal.ejs") %>
+</main>
+
+<%- include("includes/footer", {hide:"hide"}); %>

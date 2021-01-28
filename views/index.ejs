@@ -1,0 +1,85 @@
+<style>
+    .headerContainer {
+        visibility: hidden;
+    }
+</style>
+<%- include("includes/navbar"); %>
+<main>
+    <!-- <section style="visibility: hidden;"></section> -->
+    <section class="banner">
+        <!-- <img src="assets/img/chatUI.jpeg" alt="" /> -->
+        <div class="scx21">
+            <h1><%- APPNAME %></h1>
+            <p>...making impact.</p>
+        </div>
+    </section>
+
+    <section class="form-login form-login-section">
+        <form action="/login" method="POST" id="___loginForm">
+            <div class="message" style="background-color: transparent;color: #000000;">
+                <h1>Welcome back!</h1>
+                <small class="success ___feedback"></small>
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input
+                    type="email"
+                    name="username"
+                    class="form-control"
+                    placeholder="Email address"
+                    value="johnny@gmmail.com"
+                    required
+                />
+                <span class="error"> error </span>
+            </div>
+            <div class="form-group">
+                <label for="password"
+                    >Password
+                    <button
+                        type="button"
+                        class="btn fa fa-eye passwordVisibilityMode"
+                    ></button
+                ></label>
+                <input
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    placeholder="Enter password"
+                    value="12345"
+                    required
+                />
+                <span class="error">error </span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="form-control ___loginForm">
+                    Continue
+                </button>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div class="form-group" style="text-align: center">
+                <p>
+                    <button
+                        type="button"
+                        id="___getRegisterForm"
+                        class="btn-i btn-i-b text-bold"
+                        style="padding: 0.5em 2em; background: rgb(14, 168, 14)"
+                    >
+                        Register.
+                    </button>
+                </p>
+                <br />
+                <p>
+                    Forgot your password?
+                    <a href="/password"> Recover now.</a>
+                </p>
+            </div>
+        </form>
+        <hr style="opacity: 0.3; margin: 1em auto; padding: 0 1em" />
+        <p class="p p-1 text-small text-bold">
+            You can also buy your Telecom needs <a href="#">here</a>
+        </p>
+    </section>
+</main>
+<%- include("includes/footer"); %>

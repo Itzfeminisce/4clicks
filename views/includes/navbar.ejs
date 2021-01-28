@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%- title; %></title>
+
+        <link rel="stylesheet" href="../assets/css/dist/styles.css" />
+        <link rel="stylesheet" href="../assets/lib/fa/css/all.css" />
+        <link rel="stylesheet" href="../assets/lib/animate/animate.css" />
+    </head>
+    <body>
+        <header class="headerContainer">
+            <nav class="nav container">
+                <div class="section brand">
+                    <a href="/" class="brand-name"> <%- APPNAME; %> </a>
+                    <div class="placeholder placeholder-logo remove"></div>
+                    <div class="placeholder placeholder-search">
+                        <input
+                            class="openSearchInput placeholder placeholder-search placeholder-round fa fa-search"
+                            placeholder=" Search <%- APPNAME;  %> "
+                        />
+                    </div>
+                </div>
+                <div class="section menu">
+                    <a
+                        href="/home"
+                        class="placeholder placeholder-round fa fa-hashtag btn"
+                        title="Hashtag"
+                    >
+                    </a>
+                    <a
+                        href="/groups"
+                        class="placeholder placeholder-round fa fa-users"
+                        title="Groups"
+                    >
+                    </a>
+                    <a
+                        href="/market"
+                        class="placeholder placeholder-round fa fa-cart-plus"
+                        title="Markeplace"
+                    >
+                    </a>
+                    <a
+                        href="/settings"
+                        class="placeholder placeholder-round fa fa-wrench"
+                        title="Settings"
+                    >
+                    </a>
+                </div>
+                <div class="section extras">
+                    <a href="/p"
+                    title="Profile (Itzfeminisce)"
+                    style="display: flex;justify-content:center;align-items: center;"
+                    
+                    >
+                        <img
+                        style="margin: 0;"
+                        class="placeholder placeholder-avatar"
+                        title="Username"
+                        src="../assets/img/ic_img_user.jpg"
+                    />
+                <p class="text-bold" style="color: #000000;"><%= session.FirstName %>  </p>
+                </a>
+
+                    <button id="__createPost"
+                        class="text-primary placeholder placeholder-round fa fa-plus openModalContent"
+                    ></button>
+                    <button
+                        class="placeholder placeholder-round fa fa-inbox"
+                    ></button>
+                    <a href="#" id="___notificationBarDropDownList" class="placeholder placeholder-round fa fa-bell dropDownMenuToggler"
+                    ></a>
+                    <a href="#" id="___caretDropDownList"
+                        class="placeholder placeholder-round fa fa-caret-down dropDownMenuToggler"
+                    ></a>
+                </div>
+
+                <!-- header modal extensions -->
+                <div class="appearanceModal searchInputModal">
+                    <div class="card card-card">
+                        <div class="card-header">
+                            <button
+                                id=""
+                                class="c001 c112 p-1 closeViewSearchInputModal"
+                            >
+                                <i class="fa fa-arrow-left"></i>
+                            </button>
+                            <div class="card-header-info">
+                                <input
+                                    type="text"
+                                    class="s100 p-1"
+                                    name=""
+                                    placeholder="Seach <%- APPNAME %>"
+                                />
+                            </div>
+                            <button
+                                id=""
+                                class="c001 c112 p-1 dropDownMenuToggler"
+                            >
+                                <i class="fa fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+
+                        <div class="card-footer card-footer-extended">
+                            <div class="c101">
+                                <div class="card-header-info c111">
+                                    <div class="card-header-image c112"></div>
+                                    <p class="c112-1 p-l-1">Username jj
+                                        <br>
+                                        <span class="">Friends</span>
+                                    </p>
+                                    
+                                </div>
+                                <div class="card-header-info c111">
+                                    <div class="card-header-image c112"></div>
+                                    <p class="c112-1 p-l-1">Username</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- \header modal extensions -->
+            </nav>
+        </header>
+    </body>
+</html>

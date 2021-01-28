@@ -1,0 +1,76 @@
+<%- include("../includes/navbar"); %>
+
+<main class="x101">
+ 
+    <%- include("../includes/sidebar", {data:"data"}) %>
+  <!-- <section class="hide"></section> -->
+  <!-- <section class="banner">
+        <img src="assets/img/chatUI.jpeg" alt="" />
+      </section> -->
+
+  <section class="x110 container-fit-content">
+    <div class="form-group">
+      <label for="host">Select Host</label>
+      <div class="btn-group">
+        <button class="btn btn-primary btn-capsule">Mtn</button>
+        <button class="btn btn-primary btn-capsule">Glo</button>
+        <button class="btn btn-primary btn-capsule">9mobile</button>
+        <button class="btn btn-primary btn-capsule">Airtel</button>
+        <button class="btn btn-primary btn-capsule">Vodafone</button>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="volume">Select Volume</label>
+      <div class="btn-group btn-r-5">
+        <button class="btn btn-primary btn-capsule">1GB</button>
+        <button class="btn btn-primary btn-capsule">2GB</button>
+        <button class="btn btn-primary btn-capsule">2.5GB</button>
+        <button class="btn btn-primary btn-capsule">3GB</button>
+        <button class="btn btn-primary btn-capsule">5GB</button>
+        <button class="btn btn-primary btn-capsule">1GB</button>
+        <button class="btn btn-primary btn-capsule">2GB</button>
+        <button class="btn btn-primary btn-capsule">2.5GB</button>
+        <button class="btn btn-primary btn-capsule">3GB</button>
+        <button class="btn btn-primary btn-capsule">5GB</button>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="host">Select recipient</label>
+      <div class="btn-group">
+        <button class="btn btn-primary btn-capsule">Myself</button>
+        <button class="btn btn-primary btn-capsule">Friend</button>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="host">Enter Number</label>
+      <div class="btn-group">
+        <input type="text" class="btn btn-capsule" placeholder="0814XXXXXX" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="host">Summary</label>
+      <div class="">
+        <h4>
+          You will receive <i class="btn">1GB</i>on your
+          <i class="btn">MTN</i>network via <i class="btn">07061017993</i>.
+        </h4>
+        <h4>Amount: <i class="btn">1,500 NGN</i></h4>
+        <h4>
+          Discount:
+          <i class="btn">20% <small style="color: red">(-58 NGN)</small></i>
+        </h4>
+        <h4>Payable: <i class="btn">1,250 NGN</i></h4>
+      </div>
+    </div>
+    <div class="flex-x">
+      <button class="btn bx121 p-1 btn-primary btn-capsule">Continue</button>
+    </div>
+  </section>
+
+  <%- include("../includes/marketMenuDescription") %>
+</main>
+
+
+
+<%- include("../includes/footer"); %>
+

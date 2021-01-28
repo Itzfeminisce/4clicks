@@ -1,0 +1,39 @@
+<div class="xa21x">
+    <div class="xa22x"></div>
+    <div class="xa23x">
+        <div class="xa23xx xax xax-l root">
+            <ul>
+                <li><h3>About</h3></li>
+                <li><a href="/p/overview" id="___overview_link" class="_xxx_view_loader" data-view="overview">Overview</a></li>
+                <li><a href="/p/basic_info" id="___basic_info_link" class="_xxx_view_loader" data-view="basic_info">Basic Info.</a></li>
+            </ul>
+            <ul>
+                <li><h3>Referrals</h3></li>
+                <li><a href="/p/referrals" id="___referral_link" class="" data-view="referrals">Referrals</a></li>
+                <li><a href="/p/referral_link" id="___referral_link_link" class="" data-view="referral_link">Link</a></li>
+            </ul>
+            <ul>
+                <li><h3>Friends</h3></li>
+                <li><a href="/p/request_friends" id="___request_friends_link" class="" data-view="request_friends">Requests <span class="tx01">+99</span></a></li>
+                <li><a href="/p/active_friends" id="___active_friends_link" class="" data-view="active_friends">Active <span class="tx01">56</span></a></li>
+            </ul>
+            <ul>
+                <li><h3>Account</h3></li>
+                <li><a href="/p/deactivate_account" id="___deactivate_account_link" class="" data-view="deactivate_account">Deactivate</a></li>
+            </ul>
+            <ul>
+                <li><h3>Website</h3></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li class="xaa"><a>2020 inc. All rights reserved</a></li>
+            </ul>
+        </div>
+        <!-- <%- include(about_page) %>  -->
+        
+    </div>
+</div>
+<script>
+        let about_page = `<%- about_page %>`;
+        about_page = about_page.replace("./","");
+        document.querySelector(`#___${about_page}_link`).classList.add("active_link");
+</script>
